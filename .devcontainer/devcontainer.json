@@ -4,6 +4,7 @@
 			"version": "latest"
 		}
 	},
+  "forwardPorts": [8080],
   "customizations": {
     "codespaces": {
       "openFiles": [
