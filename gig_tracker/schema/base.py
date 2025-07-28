@@ -70,11 +70,11 @@ def create_venues(session: Session) -> list[int]:
 
 def create_user(session: Session) -> None:
     user = UserCreate(
-        username="user1",
-        first_name="Dave",
-        last_name="Westerveld",
+        username="user2",
+        first_name="L",
+        last_name="M",
         email_address="fake@fake.com",
-        password="password",
+        password="mypass123!",
     )
     pwd_data = {"hashed_password": hash_password(user.password)}
     db_user = User.model_validate(user, update=pwd_data)
